@@ -1,0 +1,23 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "custName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasMany",
+      "model": "Account",
+      "foreignKey": "custId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

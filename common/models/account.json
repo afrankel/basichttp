@@ -1,0 +1,27 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "acctName": {
+      "type": "string"
+    },
+    "custId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "transactions": {
+      "type": "hasMany",
+      "model": "Transaction",
+      "foreignKey": "accountId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

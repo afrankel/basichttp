@@ -1,0 +1,23 @@
+{
+  "name": "Transaction",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "transDate": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "accountId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
